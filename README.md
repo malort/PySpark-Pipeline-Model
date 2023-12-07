@@ -2,8 +2,13 @@
 
 ## Introduction:
 
+This project is an example solution of a Machine Learning problem using PySpark in Databricks.
 
+Databricks is an organization and big data processing platform. It provides a just-in-time cloud-based platform for big data processing clients. 
 
+The data used in this project is formed by credit card applications. The problem consists of predicting whether an application will be approved or not, therefore it is a binary classification problem.  
+
+The solution presented is made using tools especially well suited for parallel processing. 
 ## Data:
 
 The data used for this project is a set of credit card applications.  
@@ -21,7 +26,7 @@ After reading the dataset located in the Databricks FileStore folder, the Pyspar
 
 Once the dataframe is well prepared, a pipeline model is created comprising several stages like string indexers, vector assembler, or the random forest classifier.
 
-Then, using the CrossValidator and the ParamGridBuilder tools, the pipeline model is trained in order to find the best hyperparameters to solve the problem.
+Then, using the CrossValidator and the ParamGridBuilder tools, the pipeline model is trained to find the best hyperparameters to solve the problem.
 
 Finally, the best model is selected and the best parameters are shown. A feature importance analysis is also displayed to measure the contribution of each variable to the model predictions.
 
